@@ -332,14 +332,6 @@ void loop() {
         } else {
           match = (c == '\r') ? 1 : 0;
         }
-
-        if (reqLen >= sizeof(reqBuf) - 1) {
-          reqLen = 0;
-          match = 0;    Serial.print("\n[WARN] Request buffer overflow. Resetting. len=");
-    Serial.print(reqLen);
-    Serial.print(" cap=");
-    Serial.println(sizeof(reqBuf));
-        }
       }
     }
     spiRxPending = false;
