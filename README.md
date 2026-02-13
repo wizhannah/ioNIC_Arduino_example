@@ -17,6 +17,7 @@ https://docs.wiznet.io/Product/Chip/MCU/Pre-programmed-MCU/W55RP20-S2E/overview-
 | loopback/udp |  UDP Loopback | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/loopback/udp/loopback_udp_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/loopback/udp/loopback_udp_spi) |
 | http client | HTTP GET Request | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/http/http_client_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/http/http_client_spi) |
 | webserver | Web Server Example | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/webserver/webserver_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/webserver/webserver_spi) |
+| SSL Client | SSL Client Example | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/ssl/ssl_client_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/ssl/ssl_client_spi) |
 | (To be added...)   |
 
 ## Hardware Setup
