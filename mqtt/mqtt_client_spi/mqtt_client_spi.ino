@@ -317,27 +317,17 @@ void loop() {
 
   if (spiRxPending || digitalRead(PIN_INT) == LOW) {
     static uint8_t dataBuf[MAX_DATA_LEN];
-    static uint8_t lineBuf[256];
-    static uint16_t lineLen = 0;
-    bool lineReady = false;
+    bool received = false;
     while (digitalRead(PIN_INT) == LOW) {
       int n = data_rx(dataBuf, sizeof(dataBuf));
       if (n <= 0) {
         break;
       }
       Serial.write(dataBuf, n);
-      for (int i = 0; i < n; ++i) {
-        if (lineLen < sizeof(lineBuf)) {
-          lineBuf[lineLen++] = dataBuf[i];
-        }
-        if (dataBuf[i] == '\n') {
-          lineReady = true;
-        }
-      }
+      received = true;
     }
-    if (lineReady) {
+    if (received) {
       sendMqttPayload(MQTT_PAYLOAD);
-      lineLen = 0;
     }
     spiRxPending = false;
   }
