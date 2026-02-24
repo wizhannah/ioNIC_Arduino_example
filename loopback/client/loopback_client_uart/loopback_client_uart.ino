@@ -64,11 +64,22 @@ static void sendAtLine(const char *cmd, uint32_t waitMs) {
 }
 
 static void at_set(const char *key, const char *value) {
+  if (key == nullptr) {
+    return;
+  }
+
   if (value == nullptr) {
+    Serial.print("AT Set > ");
+    Serial.println(key);
+    delay(10);
     sendAtLine(key, 1000);
     return;
   }
+
   String line = String(key) + String(value);
+  Serial.print("AT Set > ");
+  Serial.println(line);
+  delay(10);
   sendAtLine(line.c_str(), 1000);
 }
 

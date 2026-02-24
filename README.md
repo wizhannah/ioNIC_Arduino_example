@@ -19,7 +19,7 @@ https://docs.wiznet.io/Product/Chip/MCU/Pre-programmed-MCU/W55RP20-S2E/overview-
 | webserver | Web Server Example | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/webserver/webserver_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/webserver/webserver_spi) |
 | SSL Client | SSL Client Example | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/ssl/ssl_client_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/ssl/ssl_client_spi) |
 | MQTT client | MQTT client Example | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/mqtt/mqtt_client_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/mqtt/mqtt_cluent_spi) |
-| AWS MQTT client | AWS MQTT client | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/mqtts/aws_mqtts_uartt) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/mqtts/aws_mqtts_spi) |
+| AWS MQTT client | AWS MQTT client | [UART](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/mqtts/aws_mqtts_uart) / [SPI](https://github.com/wizhannah/ioNIC_Arduino_example/tree/main/mqtts/aws_mqtts_spi) |
 
 ## Hardware Setup
 ### W55RP20 Interface Selection

@@ -123,6 +123,13 @@ static int at_set(const char *cmdLine) {
     return -11;
   }
 
+  String s_no_crlf = s;
+  if (s_no_crlf.endsWith("\r\n")) {
+    s_no_crlf.remove(s_no_crlf.length() - 2);
+  }
+  Serial.print("AT Set > ");
+  Serial.println(s_no_crlf);
+
   uint16_t totalLen = (uint16_t)s.length();
   uint16_t dataLen = (uint16_t)(totalLen - 2);
 
